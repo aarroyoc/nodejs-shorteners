@@ -1,0 +1,21 @@
+{
+  "name": "sh.st",
+  "version": "1.0.0",
+  "description": "Shorten your links using Shorte.st and earn money",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "link",
+    "shortener",
+    "sh.st",
+    "earn",
+    "money"
+  ],
+  "author": "Adrián Arroyo Calle",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.65.0"
+  }
+}
