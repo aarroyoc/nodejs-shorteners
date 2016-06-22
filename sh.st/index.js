@@ -6,8 +6,10 @@ module.exports=function(apiKey){
 	this.short=function(url,cb){
 		var URL="https://api.shorte.st/v1/data/url"
 		request.put(URL,{
+			headers: {
+				"public-api-token" : apiKey
+			},
 			form: {
-				"public-api-token" : apiKey,
 				"urlToShorten": url
 			}
 		},function(error,response,body){
