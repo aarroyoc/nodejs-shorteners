@@ -9,7 +9,7 @@ module.exports=function(id,auth){
 		var adultMode="0";
 		if(adult)
 			adultMode="1";
-		var URL="http://shink.in/api/"+adultMode+"/id/"+id+"/auth_token/"+auth+"/url/"+encodeURIComponent(url);
+		var URL="http://shink.in/api/0/id/"+id+"/auth_token/"+auth+"?s="+encodeURIComponent(url);
 		http.get(URL,function(response){
 			var body = '';
 			response.on('data', function(d) {
