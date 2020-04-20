@@ -1,4 +1,4 @@
-var http=require("http");
+var http = require("https");
 
 module.exports=function(apiKey,uid){
 	if(!apiKey)
@@ -6,7 +6,7 @@ module.exports=function(apiKey,uid){
 	if(!uid)
 		uid="96749";
 	this.short=function(url,cb){
-		var URL="http://bc.vc/api.php?key="+apiKey+"&uid="+uid+"&url="+encodeURIComponent(url);
+		var URL="https://bc.vc/api.php?key="+apiKey+"&uid="+uid+"&url="+encodeURIComponent(url);
 		http.get(URL,function(response){
 			var body = '';
 			response.on('data', function(d) {
